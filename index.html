@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raj Gupta | Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1c2541;
+    --ink-soft: #3d4663;
+    --accent: #0f8b8d;
+    --accent-light: #e3f4f4;
+    --page-bg: #e9edf3;
+    --paper: #ffffff;
+    --line: #d9dfe8;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+    background: var(--page-bg);
+    color: var(--ink-soft);
+    line-height: 1.7;
+    padding: 40px 16px;
+  }
+
+  /* Resume sheet */
+  .resume {
+    max-width: 820px;
+    margin: 0 auto;
+    background: var(--paper);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(28, 37, 65, 0.15);
+  }
+
+  /* Header */
+  .container {
+    background: var(--ink);
+    color: #fff;
+    padding: 44px 48px 36px;
+    border-bottom: 6px solid var(--accent);
+  }
+
+  .container h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 28px;
+    font-size: 0.95rem;
+  }
+
+  .contact a {
+    color: #cfd8ea;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .contact a:hover,
+  .contact a:focus-visible {
+    color: #fff;
+    border-bottom-color: var(--accent);
+    outline: none;
+  }
+
+  /* Body */
+  .content {
+    padding: 12px 48px 44px;
+  }
+
+  .content h3 {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: 1.5px;
+    margin: 32px 0 12px;
+    padding: 0 0 8px 14px;
+    border-left: 5px solid var(--accent);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .content p {
+    font-size: 0.98rem;
+  }
+
+  .content b {
+    color: var(--ink);
+    font-weight: 800;
+  }
+
+  .content ul {
+    list-style: none;
+  }
+
+  .content li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 6px;
+    font-size: 0.98rem;
+  }
+
+  .content li::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0.7em;
+    width: 7px;
+    height: 7px;
+    background: var(--accent);
+    border-radius: 50%;
+  }
+
+  /* Skills as chips */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .skills li {
+    padding: 6px 16px;
+    margin: 0;
+    background: var(--accent-light);
+    color: #0b6466;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 999px;
+  }
+
+  .skills li::before {
+    display: none;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    body {
+      padding: 0;
+    }
+
+    .resume {
+      border-radius: 0;
+    }
+
+    .container {
+      padding: 32px 22px 28px;
+    }
+
+    .container h1 {
+      font-size: 2rem;
+    }
+
+    .content {
+      padding: 8px 22px 32px;
+    }
+  }
+
+  /* Print / Save as PDF */
+  @media print {
+    body {
+      background: #fff;
+      padding: 0;
+    }
+
+    .resume {
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    .container,
+    .skills li {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  }
+</style>
+</head>
+
+<body>
+<div class="resume">
+  <div class="container">
+    <h1>Raj Gupta</h1>
+    <div class="contact">
+      <a href="tel:+919098494308">+91 9098494308</a>
+      <a href="mailto:rg891737@gmail.com">rg891737@gmail.com</a>
+      <a href="https://github.com/rg891737-hub" target="_blank" rel="noopener">github.com/rg891737-hub</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <h3>EDUCATION</h3>
+    <p><b>UIT RGPV Bhopal, MP</b><br>B.Tech in Information Technology</p>
+
+    <h3>SKILLS</h3>
+    <ul class="skills">
+      <li>Programming in C++</li>
+      <li>DSA in C++</li>
+      <li>Frontend Developer</li>
+    </ul>
+
+    <h3>EXPERIENCE</h3>
+    <p><b>Web Development and DSA Learner</b><br>
+      Currently developing skills in HTML, CSS, JavaScript, C++ and Data Structures &amp; Algorithms through
+      hands-on projects and problem-solving practice.</p>
+
+    <h3>PROJECTS</h3>
+    <ul>
+      <li>Login &amp; Signup page</li>
+      <li>Personal Resume</li>
+    </ul>
+
+    <h3>ACHIEVEMENTS</h3>
+    <ul>
+      <li>Completed C++ programming and Data Structures &amp; Algorithms learning modules.</li>
+      <li>Completed HTML and CSS fundamentals and developed practice web projects.</li>
+    </ul>
+
+    <h3>INTERESTS</h3>
+    <p>Interest in playing cricket, visiting new places, creating something new.</p>
+  </div>
+</div>
+</body>
+
+</html>
